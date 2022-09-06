@@ -38,15 +38,15 @@ const ShibaCard = () => {
                 >
                     <FrontSide style={{backgroundColor: 'white', borderRadius: '1rem', boxShadow: '0 0 6px rgba(0, 0, 0, .5)'}}>
                         <div className="card-item">
-                            <h3>
-                                Reveal your <span>Shiba</span>!
-                            </h3>
+                            {window.appLang == 'EN' ? <h3>Reveal your <span>Shiba</span>!</h3> : <h3>¡Descubre tu <span>Shiba</span>!</h3>}
                         </div>
                     </FrontSide>
                     <BackSide onClick={fetchShiba} style={{backgroundColor: 'white', borderRadius: '1rem', boxShadow: '0 0 6px rgba(0, 0, 0, .5)'}}>
                         <div className="card-item">
                             <div id='img'><img src={shibaData} alt="Shiba image" /></div>
-                            <div><h4>Click again to see another one</h4></div>
+                            <div>
+                                {window.appLang == 'EN' ? <h4>Click again to see another one</h4> : <h4>Haz clic de nuevo para ver más</h4>}
+                            </div>
                         </div>
                     </BackSide>
                 </Flippy>

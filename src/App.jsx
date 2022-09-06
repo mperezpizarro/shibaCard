@@ -7,6 +7,13 @@ import './App.css'
 
 const App = () => {
 
+  let lang = navigator.language || navigator.userLanguage
+  
+  if(/^es-*/g.test(lang))
+    window.appLang='ES'
+  else
+    window.appLang='EN'
+
   return (
     <div className="App">
         <Title />
