@@ -4,4 +4,4 @@ Aplicación creada con Vite React y la API de [Shibe Online](https://shibe.onlin
 
 ## Cosas a añadir
 
-- Traducción al español
+- ~Traducción al español~
